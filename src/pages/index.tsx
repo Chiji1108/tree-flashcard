@@ -50,10 +50,8 @@ export default function Home() {
   ]);
 
   return (
-    //TODO : bg-gray-100
     <div>
       <Head>
-        {/* TODO: */}
         <title>植物10</title>
         <meta name="description" content="植物10種を覚えれるWebアプリです" />
         <link rel="icon" href="/favicon.ico" />
@@ -103,13 +101,16 @@ export default function Home() {
           ))}
         </Grid>
       </main>
-      <footer className="flex flex-col items-center justify-center p-4 mt-4">
+      <footer className="flex flex-col items-center justify-center p-4 mt-4 mb-16">
         <p>created by 千々岩</p>
         <p>
           Twitter: <Link href="https://twitter.com/Chijidosu">@Chijidosu</Link>
         </p>
         <p>
-          Github: <Link href=""></Link>
+          GitHub:{" "}
+          <Link href="https://github.com/Chiji1108/tree-flashcard">
+            Chiji1108/tree-flashcard
+          </Link>
         </p>
       </footer>
     </div>
