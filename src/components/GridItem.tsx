@@ -31,7 +31,7 @@ export default function GridItem({
         {isFlipped ? (
           <a
             href={url}
-            className="flex justify-center items-center space-x-2 group"
+            className="flex flex-col justify-center items-center space-y-2 group"
           >
             <p className="text-xl font-bold group-hover:underline">{name}</p>
             <p className="text-xl font-bold group-hover:underline">{latin}</p>

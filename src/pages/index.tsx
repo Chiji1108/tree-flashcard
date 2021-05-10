@@ -51,7 +51,7 @@ export default function Home() {
 
   return (
     //TODO : bg-gray-100
-    <div className="relative">
+    <div>
       <Head>
         {/* TODO: */}
         <title>植物10</title>
@@ -63,21 +63,29 @@ export default function Home() {
         />
       </Head>
       <Footer current={current} max={state.length} />
-      <main className="container mx-auto text-center p-6 flex-col justify-center">
-        <h1 className="mt-12 mb-6 text-6xl font-black">植物10</h1>
-        <p className="m-6">
-          データ元:{" "}
+      <main className="container mx-auto text-center p-6">
+        <h1 className="mt-12 mb-12 text-6xl font-black">植物10</h1>
+        <p>植物10種を覚えれるWebアプリです。</p>
+        <p>スワイプすると他の画像を見れます。</p>
+        <div className="m-6">
+          <p>データ元</p>
           <Link href="http://www.chiba-museum.jp/jyumoku2014/kensaku/namae.html">
             樹木検索図鑑
           </Link>
-          {" & "}
+          {", "}
           <Link href="http://plants.minibird.jp/">西宮の湿生・水生植物</Link>
-        </p>
-        <div className="mb-6 flex space-x-6">
-          <Button onClick={() => dispatch({ type: "shuffle" })}>
-            シャッフル
-          </Button>
-          <Button onClick={() => dispatch({ type: "reset" })}>リセット</Button>
+        </div>
+        <div className="mb-6 flex space-x-4 justify-center">
+          <div>
+            <Button onClick={() => dispatch({ type: "shuffle" })}>
+              シャッフル
+            </Button>
+          </div>
+          <div>
+            <Button onClick={() => dispatch({ type: "reset" })}>
+              リセット
+            </Button>
+          </div>
         </div>
 
         <Grid>
@@ -100,7 +108,9 @@ export default function Home() {
         <p>
           Twitter: <Link href="https://twitter.com/Chijidosu">@Chijidosu</Link>
         </p>
-        {/* TODO: github link */}
+        <p>
+          Github: <Link href=""></Link>
+        </p>
       </footer>
     </div>
   );
@@ -108,7 +118,7 @@ export default function Home() {
 
 const Footer = ({ current, max }) => {
   return (
-    <div className="h-32 absolute inset-x-0 bottom-0 flex justify-center items-center bg-blue-500">
+    <div className="z-20 h-16 w-full fixed bottom-0 inset-x-0 flex justify-center items-center bg-blue-500">
       <p className="font-bold text-2xl text-white">
         {current} / {max}
       </p>
