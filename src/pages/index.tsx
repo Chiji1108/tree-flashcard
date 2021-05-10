@@ -50,7 +50,7 @@ export default function Home() {
   ]);
 
   return (
-    <div>
+    <div className="pb-16">
       <Head>
         <title>植物10</title>
         <meta name="description" content="植物10種を覚えれるWebアプリです" />
@@ -101,7 +101,7 @@ export default function Home() {
           ))}
         </Grid>
       </main>
-      <footer className="flex flex-col items-center justify-center p-4 mt-4 mb-16">
+      <footer className="flex flex-col items-center justify-center p-4 mt-4">
         <p>created by 千々岩</p>
         <p>
           Twitter: <Link href="https://twitter.com/Chijidosu">@Chijidosu</Link>
