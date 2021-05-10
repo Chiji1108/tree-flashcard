@@ -54,7 +54,9 @@ export default function GridItem({
               <SwiperSlide key={image}>
                 <img
                   loading="lazy"
-                  src={image.replace("http:", "")}
+                  src={`/images/${name}/${images.findIndex(
+                    (i) => i === image
+                  )}.jpg`}
                   alt={name}
                   className="w-full h-full object-cover"
                 />
