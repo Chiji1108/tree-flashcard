@@ -50,7 +50,7 @@ export default function Home() {
   ]);
 
   return (
-    <div className="pb-16">
+    <div>
       <Head>
         <title>植物10</title>
         <meta name="description" content="植物10種を覚えれるWebアプリです" />
