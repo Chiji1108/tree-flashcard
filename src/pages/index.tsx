@@ -129,7 +129,7 @@ export default function Home() {
 
 const Footer = ({ current, max }) => {
   return (
-    <div className="z-20 h-16 w-full fixed bottom-0 inset-x-0 flex justify-center items-center bg-blue-500">
+    <div className="z-20 h-20 w-full fixed bottom-0 inset-x-0 flex justify-center items-center bg-blue-500">
       <p className="font-bold text-2xl text-white">
         {current} / {max}
       </p>
