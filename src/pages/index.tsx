@@ -65,14 +65,24 @@ export default function Home() {
         <h1 className="mt-12 mb-12 text-6xl font-black">植物10</h1>
         <p>植物10種を覚えれるWebアプリです。</p>
         <p>スワイプすると他の画像を見れます。</p>
-        <div className="m-6">
-          <p>データ元</p>
-          <Link href="http://www.chiba-museum.jp/jyumoku2014/kensaku/namae.html">
-            樹木検索図鑑
-          </Link>
-          {", "}
-          <Link href="http://plants.minibird.jp/">西宮の湿生・水生植物</Link>
+        <div className="mt-6 mb-6 flex justify-center items-center">
+          <div className="text-left p-3 bg-gray-200">
+            <p className="font-bold">データ引用元</p>
+            <ul className="list-disc list-inside">
+              <li>
+                <Link href="http://www.chiba-museum.jp/jyumoku2014/kensaku/namae.html">
+                  樹木検索図鑑
+                </Link>
+              </li>
+              <li>
+                <Link href="http://plants.minibird.jp/">
+                  西宮の湿生・水生植物
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
+
         <div className="mb-6 flex space-x-4 justify-center">
           <div>
             <Button onClick={() => dispatch({ type: "shuffle" })}>
